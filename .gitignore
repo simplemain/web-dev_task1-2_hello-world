@@ -1,0 +1,10 @@
+web/WEB-INF/classes
+/.settings
+/.classpath
+/.project
+/logs
+/run
+/stop
+/jetty/start.ini
+.DS_Store
+/jar
