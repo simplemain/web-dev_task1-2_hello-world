@@ -19,12 +19,5 @@
               </New>
             </Arg>
           </Call>
-          <!-- 
-          <Call name="addBean">
-		    <Arg>
-		      <New class="com.baicizhan.online.filter.ExceptionHandler"/>
-		    </Arg>
-		  </Call>
-		   -->
         </Ref>
 </Configure>
