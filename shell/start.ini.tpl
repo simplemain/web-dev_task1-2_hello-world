@@ -54,17 +54,17 @@ OPTIONS=Server,jsp,jmx,resources,websocket,ext,plus,annotations,jta,jdbc
 # For a full list of available configuration files do
 #   java -jar start.jar --help
 #-----------------------------------------------------------
-${{JETTY_HOME}}/etc/jetty-jmx.xml
-${{JETTY_HOME}}/etc/jetty.xml
-${{JETTY_HOME}}/etc/jetty-hightide.xml
-# ${{JETTY_HOME}}/etc/jetty-ssl.xml
-# ${{JETTY_HOME}}/etc/jetty-requestlog.xml
-${{JETTY_HOME}}/etc/jetty-deploy.xml
-# ${{JETTY_HOME}}/etc/jetty-overlay.xml
-# ${{JETTY_HOME}}/etc/jetty-webapps.xml
-${{JETTY_HOME}}/etc/jetty-testrealm.xml
-${{JETTY_HOME}}/etc/jetty-jaas.xml
+${{JETTY_HOME}}${{file.separator}}etc${{file.separator}}jetty-jmx.xml
+${{JETTY_HOME}}${{file.separator}}etc${{file.separator}}jetty.xml
+${{JETTY_HOME}}${{file.separator}}etc${{file.separator}}jetty-hightide.xml
+# ${{JETTY_HOME}}${{file.separator}}etc${{file.separator}}jetty-ssl.xml
+# ${{JETTY_HOME}}${{file.separator}}etc${{file.separator}}jetty-requestlog.xml
+${{JETTY_HOME}}${{file.separator}}etc${{file.separator}}jetty-deploy.xml
+# ${{JETTY_HOME}}${{file.separator}}etc${{file.separator}}jetty-overlay.xml
+# ${{JETTY_HOME}}${{file.separator}}etc${{file.separator}}jetty-webapps.xml
+${{JETTY_HOME}}${{file.separator}}etc${{file.separator}}jetty-testrealm.xml
+${{JETTY_HOME}}${{file.separator}}etc${{file.separator}}jetty-jaas.xml
 
-${{project.dir}}/jetty/etc/jetty-contexts.xml
+${{project.dir}}${{file.separator}}jetty${{file.separator}}etc${{file.separator}}jetty-contexts.xml
 
 #===========================================================

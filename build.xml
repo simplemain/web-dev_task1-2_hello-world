@@ -3,7 +3,6 @@
 <project name="hello-world" default="main">
 	
 	<!-- main函数对应的类名 -->
-	<property name="ant.project.name" value="${project.name}" />
 	<!-- TODO 修改value -->
 	<property name="main-class" value="org.eclipse.jetty.start.Main" />
 	<property name="server-port" value="6636" />
@@ -136,9 +135,9 @@
 				<path refid="classpath" />
 				<path location="${jar.path}" />
 			</classpath>
-			<arg value="shell.path=${basedir}/run.bat"/>
-			<arg value="shell.template.path=${basedir}/shell/run.bat.tpl" />
-			<arg value="java.path=${java.home}/bin/java"/>
+			<arg value="shell.path=${basedir}${file.separator}run.bat"/>
+			<arg value="shell.template.path=${basedir}${file.separator}shell${file.separator}run.bat.tpl" />
+			<arg value="java.path=${java.home}${file.separator}bin${file.separator}java"/>
 			<arg value="project.dir=${basedir}"/>
 			<arg value="main-class=${main-class}"/>
 			<arg value="jar.path=${jar.path}" />
@@ -147,6 +146,7 @@
 			<arg value="stop.key=${stop-key}" />
 			<arg value="context.path=${context-path}" />
 			<arg value="project.version=${project.version}" />
+			<arg value="project.name=${ant.project.name}" />
 		</java>
 	</target>
 
