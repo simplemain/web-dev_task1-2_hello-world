@@ -9,10 +9,13 @@
 * 切换到项目的目录，然后运行ant
 
 ### 运行
-* 编译后产生run文件，然后运行 ./run debug
+* 编译后产生run文件，然后运行 <br>
+windows: run
+linux: ./run debug
+mac: ./run debug
 
 ### 浏览器访问
-* 浏览器访问 http://localhost:6636/hello-world.jsp
+* 浏览器访问 http://localhost:8080/hello-world.jsp
 
 ### 修改jsp文件
 * 修改 web/hello-world.jsp 文件，得到你想要的效果

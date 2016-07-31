@@ -5,8 +5,8 @@
 	<!-- main函数对应的类名 -->
 	<!-- TODO 修改value -->
 	<property name="main-class" value="org.eclipse.jetty.start.Main" />
-	<property name="server-port" value="6636" />
-	<property name="stop-port" value="7749" />
+	<property name="server-port" value="8080" />
+	<property name="stop-port" value="8081" />
 	<property name="stop-key" value="${ant.project.name}" />
 	<property name="context-path" value="/" />
 	
