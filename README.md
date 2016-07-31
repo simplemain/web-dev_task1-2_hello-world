@@ -10,9 +10,9 @@
 
 ### 运行
 * 编译后产生run文件，然后运行 <br>
-windows: run
-linux: ./run debug
-mac: ./run debug
+windows: run <br>
+linux: ./run debug <br>
+mac: ./run debug <br>
 
 ### 浏览器访问
 * 浏览器访问 http://localhost:8080/hello-world.jsp
