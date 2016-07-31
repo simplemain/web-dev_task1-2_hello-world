@@ -11,9 +11,11 @@ LIB_DIR="${JETTY_HOME}/lib/"
 CP="${CLASS_DIR}:${JETTY_HOME}/start.jar"
 MAIN="${{main-class}}"
 LOG_DIR="${PROJ_PATH}/logs"
+TMP_DIR="${PROJ_PATH}/tmp"
 
 OPT="-Dfile.encoding=UTF-8"
 OPT="$OPT -Xmx128m"
+OPT="$OPT -Djava.io.tmpdir=${TMP_DIR}"
 OPT="$OPT -Djetty.home=${JETTY_HOME}"
 OPT="$OPT -Dlog.dir=${LOG_DIR}"
 OPT="$OPT -Djetty.port=${{server.port}}"
@@ -30,6 +32,8 @@ done
 PROGRAM_ARG="dir=${PROJ_PATH}"
 
 cd ${PROJ_PATH}
+
+mkdir -p ${TMP_DIR}
 
 # create data and log dir
 if [ -f "system.conf" ] ; then

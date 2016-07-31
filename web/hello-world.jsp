@@ -9,7 +9,7 @@
 	</head>
 	
 	<body style="font-family:Courier New;text-align:center">
-		<div style="padding:100px 0 30px 0;">This is your first web program: Hello World!</div>
+		<div style="padding:100px 0 30px 0;">This is my first web program: Hello World!</div>
 		<div>老王祝贺你！</div>
 	</body>
 
