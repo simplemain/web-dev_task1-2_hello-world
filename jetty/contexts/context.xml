@@ -12,8 +12,8 @@
 	<Get name="sessionHandler">
 		<Set name="sessionManager">
 			<New class="org.eclipse.jetty.server.session.HashSessionManager">
-				<Set name="sessionCookie">bcz_sid</Set>
-				<Set name="sessionIdPathParameterName">bcz_sid</Set>
+				<Set name="sessionCookie">simplemain_sid</Set>
+				<Set name="sessionIdPathParameterName">simplemain_sid</Set>
 			</New>
 		</Set>
 	</Get>
